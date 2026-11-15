@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Christina Green">
+  <meta name="description" content="A spatial suitability analysis ranking 20 candidate playground sites for Johnson County Parks and Recreation District using ArcGIS Pro.">
+  <title>Playground Site Suitability Analysis | Christina Green</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Young+Serif&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+  <!-- Navigation (links go up one folder because this page is inside /projects) -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About me</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../portfolio.html" aria-current="page">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="wrap">
+        <a class="back-link" href="../portfolio.html">&larr; Back to portfolio</a>
+        <h1>Playground Site Suitability Analysis</h1>
+        <p class="meta">Johnson County Parks and Recreation District (JCPRD) &middot; Internship &middot; ArcGIS Pro</p>
+        <ul class="tags">
+          <li>Site Selection</li>
+          <li>Cartography</li>
+          <li>Spatial Data Analysis</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project-body">
+      <div class="wrap">
+        <div class="prose">
+
+          <!--
+            HOW TO USE THE FIGURE SPOTS BELOW
+            Each <figure> shows a PDF from your /images folder.
+            Save your PDFs in /images using the exact file names in each figure
+            (for example images/Buffer.pdf), or change the file name in the HTML to match yours.
+            If a PDF is missing, a placeholder with the expected file name shows instead.
+          -->
+
+          <h2>Overview</h2>
+          <p>During my internship with the Johnson County Parks and Recreation District (JCPRD), I conducted a spatial suitability analysis to evaluate and prioritize 20 potential locations for new playground infrastructure across existing park properties. Using ArcGIS Pro, the project integrated demographic modeling, network analysis, and multi-modal transit accessibility to ensure equitable community access.</p>
+
+          <figure class="figure">
+            <div class="figure-media">
+              <p class="figure-placeholder">Your cover photo will appear here<br><small>images/nametag.JPG</small></p>
+              <img src="../images/nametag.JPG" alt="Cover photo for the playground site suitability analysis" onload="this.parentElement.classList.add('loaded')" onerror="this.style.display='none'">
+            </div>
+            <figcaption>Add a caption for the cover photo.</figcaption>
+          </figure>
+
+          <h2>Methodology &amp; Spatial Modeling</h2>
+
+          <h3>Proximity &amp; Demographic Apportionment</h3>
+          <p>I generated 1-, 2-, and 3-mile radial buffers around the 20 candidate sites to model spatial catchment areas. These buffers were intersected with school enrollment data to estimate youth population density within each service radius.</p>
+
+          <figure class="figure">
+            <div class="figure-media figure-pdf">
+              <object data="../images/Buffer.pdf" type="application/pdf" aria-label="Map of 1-, 2-, and 3-mile buffers around candidate sites">
+                <p class="figure-placeholder">Your PDF will appear here.<br><small>images/Buffer.pdf</small><br>If it does not display on your device, <a href="../images/Buffer.pdf" target="_blank" rel="noopener">open the PDF in a new tab</a>.</p>
+              </object>
+            </div>
+            <figcaption>Figure 2. Add a caption describing this figure. <a href="../images/Buffer.pdf" target="_blank" rel="noopener">Open full-size PDF</a></figcaption>
+          </figure>
+
+          <h3>Regional Drive-Time Analysis</h3>
+          <p>JCPRD properties span 5 distinct administrative regions, with the highest asset concentration in the region closest to the Kansas City urban core. To evaluate accessibility more accurately than straight-line distance, I performed a network-based drive-time analysis across all 5 regions.</p>
+
+          <figure class="figure">
+            <div class="figure-media figure-pdf">
+              <object data="../images/Southwest.pdf" type="application/pdf" aria-label="Drive-time map for one representative region">
+                <p class="figure-placeholder">Your PDF will appear here.<br><small>images/Southwest.pdf</small><br>If it does not display on your device, <a href="../images/Southwest.pdf" target="_blank" rel="noopener">open the PDF in a new tab</a>.</p>
+              </object>
+            </div>
+            <figcaption>Figure 3. Drive-time map for one key region, shown as a representative example. <a href="../images/Southwest.pdf" target="_blank" rel="noopener">Open full-size PDF</a></figcaption>
+          </figure>
+
+          <figure class="figure">
+            <div class="figure-media figure-pdf">
+              <object data="../images/Summary.pdf" type="application/pdf" aria-label="Summary table of drive-time results for all 5 regions">
+                <p class="figure-placeholder">Your PDF will appear here.<br><small>images/Summary.pdf</small><br>If it does not display on your device, <a href="../images/Summary.pdf" target="_blank" rel="noopener">open the PDF in a new tab</a>.</p>
+              </object>
+            </div>
+            <figcaption>Figure 4. Summary table covering all 5 regions. <a href="../images/Summary.pdf" target="_blank" rel="noopener">Open full-size PDF</a></figcaption>
+          </figure>
+
+          <h3>Multi-Modal Transit Integration</h3>
+          <p>The final phase evaluated public transit and active transportation equity using RideKC network data. By incorporating transit routes, bike lanes, and pedestrian walksheds, the analysis mapped public transit connectivity to identify locations where infrastructure investments would best serve transit-dependent families.</p>
+
+          <figure class="figure">
+            <div class="figure-media figure-pdf">
+              <object data="../images/Transit.pdf" type="application/pdf" aria-label="Map of transit routes, bike lanes, and walksheds near candidate sites">
+                <p class="figure-placeholder">Your PDF will appear here.<br><small>images/Transit.pdf</small><br>If it does not display on your device, <a href="../images/Transit.pdf" target="_blank" rel="noopener">open the PDF in a new tab</a>.</p>
+              </object>
+            </div>
+            <figcaption>Figure 5. Add a caption describing this figure. <a href="../images/Transit.pdf" target="_blank" rel="noopener">Open full-size PDF</a></figcaption>
+          </figure>
+
+          <!--
+          Optional: add a short results section here once you are ready, for example:
+          <h2>Outcome</h2>
+          <p>One or two sentences on what the analysis found or how it was used.</p>
+          -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer / Contact -->
+  <footer class="site-footer" id="contact">
+    <div class="wrap">
+      <h2>Contact me</h2>
+      <p>Email me or find me on LinkedIn and GitHub.</p>
+      <ul class="social">
+        <li><a href="mailto:christinagreen1101@gmail.com" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/christina-green-3a5b73256" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/greenchristina" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+      <p class="copyright"><small>&copy; 2026 Christina Green</small></p>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
