@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Christina Green">
+  <meta name="description" content="Cartography projects by Christina Green: a map series on the growth of Antarctic research stations and a disc golf course map package.">
+  <title>Cartography Projects | Christina Green</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Young+Serif&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+  <!-- Navigation (links go up one folder because this page is inside /projects) -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About me</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../portfolio.html" aria-current="page">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="wrap">
+        <a class="back-link" href="../portfolio.html">&larr; Back to portfolio</a>
+        <h1>Cartography Projects</h1>
+        <p class="meta">ArcGIS Pro &middot; Adobe Illustrator</p>
+        <ul class="tags">
+          <li>Cartography</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project-body">
+      <div class="wrap">
+        <div class="prose">
+
+          <!--
+            File names (in your /images folder) used on this page:
+              Cover photo:  IMG_1025.JPG
+              First map:    Screenshot 2026-02-18 192613.png   (written with %20 for the spaces)
+              Final map:    WP 8.5x11.pdf                      (written with %20 for the spaces)
+            Names are case-sensitive on GitHub Pages. Renaming files to use hyphens instead of spaces is optional but tidier.
+          -->
+
+          <figure class="figure">
+            <div class="figure-media">
+              <p class="figure-placeholder">Your cover photo will appear here<br><small>images/IMG_1025.JPG</small></p>
+              <img src="../images/IMG_1025.JPG" alt="Cover photo for the cartography projects" onload="this.parentElement.classList.add('loaded')" onerror="this.style.display='none'">
+            </div>
+            <figcaption>Add a caption for the cover photo.</figcaption>
+          </figure>
+
+          <h2>Temporal Expansion of Antarctic Research Infrastructure</h2>
+          <p>I’ve always been fascinated by polar exploration history, so I built a map series tracking how Antarctic research stations have grown and shifted across five distinct eras, from the 1895 Heroic Age all the way to modern-day science. Using ArcGIS Pro, I took raw facility data from the Council of Managers of National Antarctic Programs (COMNAP), cleaned it up into spatial points, and layered it over British Antarctic Survey boundary shapefiles.</p>
+          <p>To give the maps a bit more depth, I brought in a Digital Elevation Model (DEM) and slightly exaggerated the terrain, which added subtle texture without distracting from the historical data. It’s a really cool visual of how global politics and technology have shaped humanity’s footprint on the ice over the last century.</p>
+
+          <figure class="figure">
+            <div class="figure-media">
+              <p class="figure-placeholder">Your map will appear here<br><small>images/Screenshot 2026-02-18 192613.png</small></p>
+              <img src="../images/Screenshot%202026-02-18%20192613.png" alt="Map from the Antarctic research station series" onload="this.parentElement.classList.add('loaded')" onerror="this.style.display='none'">
+            </div>
+            <figcaption>Add a caption describing this map, for example which era it shows.</figcaption>
+          </figure>
+
+          <h2>Shawnee Mission Park Disc Golf Maps</h2>
+          <p>For this project, I wanted to combine my GIS background with graphic design to build a practical cartographic package for a new disc golf course at Shawnee Mission Park. I used ArcGIS Pro to map the layout accurately and then pulled the vector files into Adobe Illustrator to style everything.</p>
+          <p>The final deliverables were a large, detailed kiosk map for orientation at the trailhead and a pocket-sized handheld map with a built-in scorecard on the back. My main focus was making sure the wayfinding was super intuitive so players actually have clear, user-friendly maps whether they’re standing at the first tee or out on the course.</p>
+
+          <figure class="figure">
+            <div class="figure-media figure-pdf tall">
+              <object data="../images/WP%208.5x11.pdf" type="application/pdf" aria-label="Disc golf course map">
+                <p class="figure-placeholder">Your PDF will appear here.<br><small>images/WP 8.5x11.pdf</small><br>If it does not display on your device, <a href="../images/WP%208.5x11.pdf" target="_blank" rel="noopener">open the PDF in a new tab</a>.</p>
+              </object>
+            </div>
+            <figcaption>Add a caption describing this map. <a href="../images/WP%208.5x11.pdf" target="_blank" rel="noopener">Open full-size PDF</a></figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer / Contact -->
+  <footer class="site-footer" id="contact">
+    <div class="wrap">
+      <h2>Contact me</h2>
+      <p>Email me or find me on LinkedIn and GitHub.</p>
+      <ul class="social">
+        <li><a href="mailto:christinagreen1101@gmail.com" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/christina-green-3a5b73256" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/greenchristina" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+      <p class="copyright"><small>&copy; 2026 Christina Green</small></p>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
