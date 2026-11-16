@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Christina Green">
+  <meta name="description" content="A new digital culvert inventory for Shawnee Mission Park, built from high-precision Trimble GPS field data collection.">
+  <title>Shawnee Mission Park Culvert Inventory | Christina Green</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Young+Serif&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+  <!-- Navigation (links go up one folder because this page is inside /projects) -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About me</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../portfolio.html" aria-current="page">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="wrap">
+        <a class="back-link" href="../portfolio.html">&larr; Back to portfolio</a>
+        <h1>Shawnee Mission Park Culvert Inventory</h1>
+        <p class="meta">JCPRD internship &middot; Trimble GPS</p>
+        <ul class="tags">
+          <li>Data Collection</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project-body">
+      <div class="wrap">
+        <div class="prose">
+
+          <!--
+            File names (in your /images folder) used on this page:
+              Cover (PDF):  SMP Culverts.pdf           (written with %20 for the space)
+              Final (PDF):  SMP Updated Culverts.pdf   (written with %20 for the spaces)
+            Names are case-sensitive on GitHub Pages.
+          -->
+          
+          <figure class="figure">
+            <div class="figure-media">
+              <p class="figure-placeholder">Your cover photo will appear here<br><small>images/TrimbleUnit.jpg</small></p>
+              <img src="images/TrimbleUnit.jpg" alt="Cover photo for the playground site suitability analysis" onload="this.parentElement.classList.add('loaded')" onerror="this.style.display='none'">
+            </div>
+          </figure>
+         
+
+          <p>One of my main projects during my JCPRD internship was building a brand-new, digital culvert inventory for our park properties, starting with Shawnee Mission Park. Before this, the district’s only records were over 10 years old in the form of a satellite image with vague, outdated points that weren’t precise enough for the maintenance crews to actually use.</p>
+          <p>To fix that, I took a Trimble GPS unit out into the field to collect accurate, high-precision coordinates from scratch. The final map brought everything up to date by verifying old structures and capturing dozens of newly installed culverts. Now, the operations team has a reliable, spatial inventory they can rely on for day-to-day park maintenance and work orders.</p>
+           <figure class="figure">
+            <div class="figure-media figure-pdf">
+              <object data="images/SMP%20Culverts.pdf" type="application/pdf" aria-label="Shawnee Mission Park culvert map">
+                <p class="figure-placeholder">Your PDF will appear here.<br><small>images/SMP Culverts.pdf</small><br>If it does not display on your device, <a href="../images/SMP%20Culverts.pdf" target="_blank" rel="noopener">open the PDF in a new tab</a>.</p>
+              </object>
+            </div>
+            <figcaption>Add a caption for this figure. <a href="../images/SMP%20Culverts.pdf" target="_blank" rel="noopener">Open full-size PDF</a></figcaption>
+          </figure>
+          <figure class="figure">
+            <div class="figure-media figure-pdf">
+              <object data="../images/SMP%20Updated%20Culverts.pdf" type="application/pdf" aria-label="Updated Shawnee Mission Park culvert inventory map">
+                <p class="figure-placeholder">Your PDF will appear here.<br><small>images/SMP Updated Culverts.pdf</small><br>If it does not display on your device, <a href="../images/SMP%20Updated%20Culverts.pdf" target="_blank" rel="noopener">open the PDF in a new tab</a>.</p>
+              </object>
+            </div>
+            <figcaption>Add a caption for the final map. <a href="../images/SMP%20Updated%20Culverts.pdf" target="_blank" rel="noopener">Open full-size PDF</a></figcaption>
+          </figure>
+
+          <!-- For a portrait (tall) PDF, change class="figure-media figure-pdf" to class="figure-media figure-pdf tall". -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer / Contact -->
+  <footer class="site-footer" id="contact">
+    <div class="wrap">
+      <h2>Contact me</h2>
+      <p>Email me or find me on LinkedIn and GitHub.</p>
+      <ul class="social">
+        <li><a href="mailto:christinagreen1101@gmail.com" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/christina-green-3a5b73256" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/greenchristina" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+      <p class="copyright"><small>&copy; 2026 Christina Green</small></p>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
