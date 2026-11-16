@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Christina Green">
+  <meta name="description" content="A map of county-level precipitation variability across Kansas from 2014 to 2024, built with Excel and ArcGIS Pro.">
+  <title>Kansas Precipitation Variability Map | Christina Green</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Young+Serif&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+  <!-- Navigation (links go up one folder because this page is inside /projects) -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About me</a></li>
+        <li><a href="../resume.html">Resume</a></li>
+        <li><a href="../portfolio.html" aria-current="page">Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="wrap">
+        <a class="back-link" href="../portfolio.html">&larr; Back to portfolio</a>
+        <h1>Kansas Precipitation Variability Map</h1>
+        <p class="meta">Cartography class project &middot; ArcGIS Pro &middot; Excel &middot; Arcade</p>
+        <ul class="tags">
+          <li>Spatial Data Analysis</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project-body">
+      <div class="wrap">
+        <div class="prose">
+
+          <!--
+            File names (in your /images folder) used on this page:
+              Cover photo:  Screenshot 2026-02-14 004247.png   (written with %20 for the spaces)
+              Final map:    CartoMapOne.pdf
+            Names are case-sensitive on GitHub Pages.
+          -->
+
+          <figure class="figure">
+            <div class="figure-media">
+              <p class="figure-placeholder">Your cover photo will appear here<br><small>images/Screenshot 2026-02-14 004247.png</small></p>
+              <img src="../images/Screenshot%202026-02-14%20004247.png" alt="Cover image for the Kansas precipitation variability map" onload="this.parentElement.classList.add('loaded')" onerror="this.style.display='none'">
+            </div>
+            <figcaption>Add a caption for the cover image.</figcaption>
+          </figure>
+
+          <p>For this cartography class project, I wanted to experiment with some advanced design techniques to map out precipitation patterns across Kansas. I pulled annual county-level precipitation data from 2014 to 2024 provided by the Kansas Office of the State Climatologist. After wrangling all the data into Excel, I calculated the mean and standard deviation of rainfall for every county and derived the coefficient of variation (CV) to show how much precipitation fluctuates over time.</p>
+          <p>To get the labeling right in ArcGIS Pro, I wrote an Arcade expression to automatically filter and display only cities with a population over 126,000. That created a few design roadblocks—for instance, I had to manually remove “Overland Park” because its label was getting squished between Kansas City and Olathe. On the flip side, filtering by population left western Kansas looking totally empty, so I manually added “Hays” and “Dodge City” to give the map better geographic context. Later on, when I created a special callout for Seward County (which had the highest rainfall variation), I dropped “Liberal” into the callout box so viewers would have a familiar city anchor right there on the map.</p>
+
+          <figure class="figure">
+            <div class="figure-media figure-pdf">
+              <object data="../images/CartoMapOne.pdf" type="application/pdf" aria-label="Kansas precipitation variability map">
+                <p class="figure-placeholder">Your PDF will appear here.<br><small>images/CartoMapOne.pdf</small><br>If it does not display on your device, <a href="../images/CartoMapOne.pdf" target="_blank" rel="noopener">open the PDF in a new tab</a>.</p>
+              </object>
+            </div>
+            <figcaption>Add a caption describing the final map. <a href="../images/CartoMapOne.pdf" target="_blank" rel="noopener">Open full-size PDF</a></figcaption>
+          </figure>
+
+          <!-- For a portrait (tall) PDF, change class="figure-media figure-pdf" to class="figure-media figure-pdf tall". -->
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer / Contact -->
+  <footer class="site-footer" id="contact">
+    <div class="wrap">
+      <h2>Contact me</h2>
+      <p>Email me or find me on LinkedIn and GitHub.</p>
+      <ul class="social">
+        <li><a href="mailto:christinagreen1101@gmail.com" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/christina-green-3a5b73256" aria-label="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/greenchristina" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+      <p class="copyright"><small>&copy; 2026 Christina Green</small></p>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
